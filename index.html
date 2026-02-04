@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facebook-Style Safe Page</title>
+  <title>Safe Video Page</title>
   <style>
     * {
       box-sizing: border-box;
@@ -36,7 +36,7 @@
     }
 
     .container {
-      max-width: 500px;
+      max-width: 600px;
       width: 90%;
     }
 
@@ -60,57 +60,37 @@
       font-size: 1rem;
     }
 
-    input {
+    video {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-      background-color: #f5f6f7;
-    }
-
-    .btn {
-      width: 100%;
-      padding: 10px;
-      background-color: #1877f2;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: not-allowed;
-      opacity: 0.7;
-    }
-
-    .note {
-      font-size: 0.8rem;
-      color: #65676b;
-      margin-top: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="top-bar">Facebook</div>
+  <div class="top-bar">Safe Video Demo</div>
 
   <div class="container">
 
+    <!-- Welcome Card -->
     <div class="card">
       <h1>Welcome</h1>
-      <p>This is a clean, safe demo layout.</p>
+      <p>This is a safe demo page with an embedded video.</p>
     </div>
 
+    <!-- Video Card -->
     <div class="card">
-      <h1>Login Demo</h1>
+      <video controls>
+        <source src="https://resource2.heygen.ai/video_translate/94087358030a4df8b20e73f1fba92ed5-en/720p.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <p>Watch this demo video safely.</p>
+    </div>
 
-      <!-- TEXT CHANGED HERE -->
-      <input type="text" placeholder="c_user" disabled>
-      <input type="text" placeholder="xs" disabled>
-
-      <button class="btn" disabled>Login</button>
-
-      <div class="note">
-        Demo only · No data is collected · Safe page
-      </div>
+    <!-- Footer Card -->
+    <div class="card">
+      <p>All content is safe · No tracking · Fully static page</p>
     </div>
 
   </div>
