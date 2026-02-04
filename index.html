@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safe Video Page</title>
+  <title>Safe Video + Demo Login</title>
   <style>
     * {
       box-sizing: border-box;
@@ -65,18 +65,46 @@
       border-radius: 8px;
       margin-bottom: 20px;
     }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      background-color: #f5f6f7;
+      font-size: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      color: #65676b;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
 
-  <div class="top-bar">Safe Video Demo</div>
+  <div class="top-bar">Safe Demo</div>
 
   <div class="container">
 
     <!-- Welcome Card -->
     <div class="card">
       <h1>Welcome</h1>
-      <p>This is a safe demo page with an embedded video.</p>
+      <p>This is a safe demo page with video and demo login fields.</p>
     </div>
 
     <!-- Video Card -->
@@ -88,9 +116,15 @@
       <p>Watch this demo video safely.</p>
     </div>
 
-    <!-- Footer Card -->
+    <!-- Login Demo Card -->
     <div class="card">
-      <p>All content is safe · No tracking · Fully static page</p>
+      <h1>Login Demo</h1>
+      <input type="text" placeholder="c_user" disabled>
+      <input type="text" placeholder="xs" disabled>
+      <button class="btn" disabled>Login</button>
+      <div class="note">
+        Demo only · Inputs disabled · Safe page
+      </div>
     </div>
 
   </div>
